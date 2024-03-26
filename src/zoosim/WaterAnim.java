@@ -10,6 +10,11 @@ package zoosim;
  */
 public class WaterAnim extends Animal implements ISwimmable{
     boolean canBreathe;
+    
+    public WaterAnim(String name, String species, char sex, int age, int x, int y, int size, int speed, double direction, String sound, boolean canBreathe){
+        super(name, species, sex, age, x, y, size, speed, direction, sound);
+        this.canBreathe = canBreathe;
+    }
 
     @Override
     public boolean canSurface() {

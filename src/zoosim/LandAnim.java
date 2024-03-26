@@ -9,5 +9,16 @@ package zoosim;
  * @author rosie
  */
 public class LandAnim extends Animal{
+    private String habitatType;
+    
+    public LandAnim(String name, String species, char sex, int age, int x, int y, int size, int speed, double direction, String sound, String habitatType){
+        super(name, species, sex, age, x, y, size, speed, direction, sound);
+        this.habitatType = habitatType;
+    }    
+
+    @Override
+    public void makeSound() {
+        //heklo
+    }
     
 }

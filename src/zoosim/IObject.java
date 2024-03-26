@@ -16,8 +16,7 @@ public interface IObject {
     
     /**
      * Turns the object by a specified angle
-     * @param int angle in degrees 
-     * @return void
+     * @param degrees
      */
     void turn(double degrees);
     
@@ -25,7 +24,6 @@ public interface IObject {
      * Places the object at a specified coordinate
      * @param x coordinate
      * @param y coordinate
-     * @return void
      */
     void place(int x, int y);
 }
