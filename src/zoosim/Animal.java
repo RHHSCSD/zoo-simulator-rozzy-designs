@@ -19,12 +19,12 @@ public class Animal implements IEntity{
     private int x;
     private int y;
     private int size; //S-Small: M-Medium: L-Large
-    private int speed; //varying speeds 0, 50, 100 (3 categories)
+    private int speed; //varying speeds 2, 5, 10 (3 categories)
     private double direction;
     private String sound;
+    private Image image;
     private int hunger = 0; //(not hungry) 0-100 (very hungry)
     private int fatigue = 0; //(not tired) 0-100 (very sleepy)
-    private Image image;
     private static final int ENERGY = 20;
     
     public Animal(String name, String species, char sex, int age, int x, int y, int size, int speed, double direction, String sound){

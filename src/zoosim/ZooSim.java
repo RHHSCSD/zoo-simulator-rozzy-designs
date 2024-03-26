@@ -3,19 +3,33 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package zoosim;
+import java.util.Scanner;
 
 /**
  *
  * @author michael.roy-diclemen
  */
+
+
 public class ZooSim {
 
     /**
      * @param args the command line arguments
      */
+    
+    
+    
     public static void main(String[] args) {
-        Animal[] animalList = new Animal[10];       
-
+        int totalAnimals = 10;
+        int totalObjects = 3;
+        //list of animals
+        Animal[] animalList = new Animal[totalAnimals];
+        ZooObjects[] zooObjectList = new ZooObjects[totalObjects];
+        
+        //adding animals
+        LandAnim cat = new LandAnim("johnny", "cat", 'F', 7, 2, 8, 50, 2, 50, "meow", "house");
+        addAnimal(cat, animalList);
+        
     }
     
     /**
