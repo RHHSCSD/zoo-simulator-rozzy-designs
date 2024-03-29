@@ -6,7 +6,7 @@ package zoosim;
 
 /**
  *
- * @author rosie
+ * @author Rosie Chai
  */
 public class Image {
     private int width;
@@ -14,6 +14,34 @@ public class Image {
     
     public Image(int width, int height){
         this.width = width;
+        this.height = height;
+    }
+
+    /**
+     * @return the width
+     */
+    public int getWidth() {
+        return width;
+    }
+
+    /**
+     * @param width the width to set
+     */
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    /**
+     * @return the height
+     */
+    public int getHeight() {
+        return height;
+    }
+
+    /**
+     * @param height the height to set
+     */
+    public void setHeight(int height) {
         this.height = height;
     }
 }

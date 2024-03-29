@@ -6,16 +6,18 @@ package zoosim;
 
 /**
  *
- * @author rosie
+ * @author Rosie Chai
  */
-public class ZooObjects implements IObject{
+public class ZooObject implements IObject{
     private String type;
     private int x;
     private int y;
     private int size;
     private double direction;
     
-    public ZooObjects(String type, int x, int y, int size, double direction){
+    //----------------------------------------------------------------------------
+    
+    public ZooObject(String type, int x, int y, int size, double direction){
         this.type = type;
         this.x = x;
         this.y = y; 
@@ -23,16 +25,37 @@ public class ZooObjects implements IObject{
         this.direction = direction;
     }
     
+    //----------------------------------------------------------------------------
+
+    /**
+     * Turns the object by a certain number
+     * @param degrees
+     */
+    
     @Override
     public void turn(double degrees){
         //turns clockwise by specified angle
         this.setDirection((this.direction + degrees) % 360);
     }
     
+    /**
+     * Places the object at specified coordinates
+     * @param x
+     * @param y
+     */
     @Override
     public void place (int x, int y){
-        this.setX(x);
-        this.setY(y);
+        setX(x);
+        setY(y);
+    }
+    
+    /**
+     *
+     * @return String representation of zoo object
+     */
+    @Override
+    public String toString(){
+        return type + " Properties - " + "Point: (" + x + ", " + y + ") | Size: " + size +  " | Direction: " + direction;
     }
 
     /**

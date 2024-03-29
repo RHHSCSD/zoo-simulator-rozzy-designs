@@ -6,7 +6,7 @@ package zoosim;
 
 /**
  *
- * @author rosie
+ * @author Rosie Chai
  */
 public interface ISwimmable {
     boolean canSurface();
