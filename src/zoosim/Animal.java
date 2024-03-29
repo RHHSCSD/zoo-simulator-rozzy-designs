@@ -8,7 +8,7 @@ package zoosim;
  *
  * @author Rosie Chai
  */
-public abstract class Animal implements IEntity {
+public class Animal implements IEntity {
 
     //properties
     private String id;
